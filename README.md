@@ -50,7 +50,7 @@ User ──< Order >── OrderItem >── Product >── Category
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/rios-pedro/paytool.git
+git clone https://github.com/<seu-usuario>/paytool.git
 cd paytool
 
 # 2. Execute o projeto
@@ -66,7 +66,7 @@ cd paytool
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/rios-pedro/paytool.git
+git clone https://github.com/<your-username>/paytool.git
 cd paytool
 
 # 2. Run the project
@@ -80,6 +80,74 @@ cd paytool
 
 ---
 
+## 📡 API Endpoints
+
+Base URL: `http://localhost:8080`
+
+### Users `/users`
+
+| Method   | Endpoint      | Description (EN) / Descrição (PT)         |
+|----------|---------------|-------------------------------------------|
+| `GET`    | `/users`      | List all users / Listar todos os usuários |
+| `GET`    | `/users/{id}` | Find user by ID / Buscar usuário por ID   |
+| `POST`   | `/users`      | Create user / Criar usuário               |
+| `PUT`    | `/users/{id}` | Update user / Atualizar usuário           |
+| `DELETE` | `/users/{id}` | Delete user / Deletar usuário             |
+
+**POST / PUT body:**
+```json
+{
+  "name": "Bob Brown",
+  "email": "bob@gmail.com",
+  "phone": "977557755",
+  "password": "123456"
+}
+```
+
+### Orders `/orders`
+
+| Method | Endpoint       | Description (EN) / Descrição (PT)       |
+|--------|----------------|-----------------------------------------|
+| `GET`  | `/orders`      | List all orders / Listar todos os pedidos |
+| `GET`  | `/orders/{id}` | Find order by ID / Buscar pedido por ID  |
+
+### Products `/products`
+
+| Method | Endpoint         | Description (EN) / Descrição (PT)         |
+|--------|------------------|-------------------------------------------|
+| `GET`  | `/products`      | List all products / Listar todos os produtos |
+| `GET`  | `/products/{id}` | Find product by ID / Buscar produto por ID  |
+
+### Categories `/categories`
+
+| Method | Endpoint           | Description (EN) / Descrição (PT)              |
+|--------|--------------------|------------------------------------------------|
+| `GET`  | `/categories`      | List all categories / Listar todas as categorias |
+| `GET`  | `/categories/{id}` | Find category by ID / Buscar categoria por ID   |
+
+---
+
+## 🧪 Testing the API / Testando a API
+
+**PT:** Recomendamos o uso do [Postman](https://www.postman.com/) para testar os endpoints. Com a aplicação rodando, basta criar requisições apontando para `http://localhost:8080`.
+
+**EN:** We recommend using [Postman](https://www.postman.com/) to test the endpoints. With the application running, just create requests pointing to `http://localhost:8080`.
+
+**Exemplo / Example — POST `/users`:**
+
+```
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Bob Brown",
+  "email": "bob@gmail.com",
+  "phone": "977557755",
+  "password": "123456"
+}
+```
+
+---
 
 ## 🛠️ Tech Stack
 
