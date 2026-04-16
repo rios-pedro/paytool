@@ -50,7 +50,7 @@ User ──< Order >── OrderItem >── Product >── Category
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/<seu-usuario>/paytool.git
+git clone https://github.com/rios-pedro/paytool.git
 cd paytool
 
 # 2. Execute o projeto
@@ -66,7 +66,7 @@ cd paytool
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/paytool.git
+git clone https://github.com/rios-pedro/paytool.git
 cd paytool
 
 # 2. Run the project
